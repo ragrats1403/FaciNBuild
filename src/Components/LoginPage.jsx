@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import '../css/Loginform.css';
+import '../css/LoginPage.css';
 import logo from '../images/Brown_logo_faci.png';
-import usericon from '../icons/8.png';
+import usericon from '../icons/8.png'; // need to add these icons beside the form
 import passicon from '../icons/7.png';
 
 function Loginform() {
@@ -14,7 +14,7 @@ function Loginform() {
     // console.log(e.target.value);
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
-    //console.log(formValues);
+    // console.log(formValues);
   };
 
   const handleSubmit = (e) => {
@@ -58,7 +58,7 @@ function Loginform() {
           </div>
           <p className='errorMsg'>{formErrors.password}</p>
           <button className="submitBtn">Login</button>
-          {Object.keys(formErrors).length === 0 && isSubmit && (
+          {Object.keys(formErrors).length === 0 && isSubmit && ( //If no errors contained, return login successful.
             <div className="msgOk">Login Successful.</div>
           )}
         </div>
