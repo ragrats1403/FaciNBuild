@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginPage from './Components/LoginPage';
-import UserDashboard from './Components/UserDashboard';
+import UserDashboard from './Components/User/UserDashboard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { render } from '@testing-library/react';
 

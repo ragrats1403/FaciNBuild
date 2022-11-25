@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../css/LoginPage.css';
 import logo from '../images/Brown_logo_faci.png';
-import usericon from '../icons/8.png'; // need to add these icons beside the form
+import usericon from '../icons/8.png';
 import passicon from '../icons/7.png';
 
 function Loginform() {
@@ -49,12 +49,14 @@ function Loginform() {
             <label>Username</label>
             <input type="text" placeholder="Username" name="username" onChange={(e) => handleChange(e)}
             />
+            <img className='usericon' src = {usericon}/>
           </div>
           <p className='errorMsg'>{formErrors.username}</p>
         <div className="formField">
             <label>Password</label>
-            <input type="text" placeholder="Password" name="password" onChange={(e) => handleChange(e)}
+            <input type="password" placeholder="Password" name="password" onChange={(e) => handleChange(e)}
             />
+            <img className='usericon' src = {passicon}/>
           </div>
           <p className='errorMsg'>{formErrors.password}</p>
           <button className="submitBtn">Login</button>

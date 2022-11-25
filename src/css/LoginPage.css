@@ -41,13 +41,14 @@ body {
 .formField {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    padding-left: 40px;
 }
 
 .formField input {
     border: 1px solid grey;
     border-radius: 4px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .formField input:focus {
@@ -86,4 +87,18 @@ button:hover {
 .msgOk {
     color: green;
     margin-top: 15px;
+}
+
+.usericon {
+    position: relative;
+    width: 40px;
+    bottom: 44px;
+    right: 44px;
+}
+
+.passicon {
+    position: relative;
+    width: 40px;
+    bottom: 44px;
+    right: 44px;
 }
